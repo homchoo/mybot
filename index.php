@@ -21,9 +21,7 @@ $line_api = 'https://notify-api.line.me/api/notify';
 
     $result = send_notify_message($line_api, $access_token, $message_data);
 
- echo '<pre>';
-     print_r($result);
-     echo '</pre>';
+
 }
 /*-------------line noti----------------------*/
 

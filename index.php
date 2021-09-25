@@ -1,5 +1,5 @@
- <?php
-/*-------------line noti----------------------*/
+ <?php 
+/*
 $line_api = 'https://notify-api.line.me/api/notify';
     $access_token = 'xiG3zAzb6Td2DBgQsScZurNVYllaCiIU+oN+LIrPX5FlwjUXWKPQjWc1LhrKNvDqyyCLEsLuXofHNZPaDPS9dP/fWhyxTSGs2rAH5i9PkgrmnVnmkvk3uXCh6T0LWL/aNQnE1yK8+fUhevcPDzrhmAdB04t89/1O/w1cDnyilFU=';
 
@@ -22,9 +22,7 @@ $line_api = 'https://notify-api.line.me/api/notify';
     $result = send_notify_message($line_api, $access_token, $message_data);
 
 
-}
-/*-------------line noti----------------------*/
-
+} 
 
 
 function send_notify_message($line_api, $access_token, $message_data){
@@ -50,8 +48,8 @@ function send_notify_message($line_api, $access_token, $message_data){
  return $return_array;
 }
 
-
-/*
+*/
+ 
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
 $ACCESS_TOKEN = 'xiG3zAzb6Td2DBgQsScZurNVYllaCiIU+oN+LIrPX5FlwjUXWKPQjWc1LhrKNvDqyyCLEsLuXofHNZPaDPS9dP/fWhyxTSGs2rAH5i9PkgrmnVnmkvk3uXCh6T0LWL/aNQnE1yK8+fUhevcPDzrhmAdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
@@ -112,5 +110,5 @@ function send_reply_message($url, $post_header, $post_body)
 
  return $result;
 }
-*/
+
 ?>

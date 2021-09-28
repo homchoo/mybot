@@ -87,6 +87,15 @@ if ( sizeof($request_array['events']) > 0 )
     'replyToken' => $reply_token,
     'messages' => [['type' => 'text', 'text' => $reply_message]]
    ];
+      $data = [
+    'replyToken' => $reply_token, 
+    'messages' => [['type' => 'image', 'originalContentUrl' =>'https://www.uts.ac.th/logo.png',
+                    'previewImageUrl' =>'https://www.uts.ac.th/logo.png'
+                  ]]
+   ];
+    
+   
+   
    $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
    $send_result = send_reply_message($API_URL, $POST_HEADER, $post_body);

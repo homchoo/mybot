@@ -21,7 +21,7 @@ if ( sizeof($request_array['events']) > 0 )
    if( $event['message']['type'] == 'text' )
    {
     $text = $event['message']['text'];
-    $reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
+    $reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุdddddddddddddddddณแล้ว';
    }
    else
     $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
@@ -36,7 +36,7 @@ if ( sizeof($request_array['events']) > 0 )
 
       $data = [
     'replyToken' => $reply_token, 
-    'messages' => [['type' => 'text', 'text' =>$event['message']['id']  
+    'messages' => [['type' => 'text', 'text' => $reply_message;
                   ]]
    ];
     

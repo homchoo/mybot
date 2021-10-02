@@ -36,7 +36,7 @@ if ( sizeof($request_array['events']) > 0 )
 
       $data = [
     'replyToken' => $reply_token, 
-    'messages' => [['type' => 'text', 'text' =>'https://www.uts.ac.th/logo.png' 
+    'messages' => [['type' => 'text', 'text' =>$event['message']['id']  
                   ]]
    ];
     

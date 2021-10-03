@@ -17,7 +17,7 @@
 	$encodeJson = json_encode($messages);
 
 	$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
-  	$LINEDatas['token'] ='xiG3zAzb6Td2DBgQsScZurNVYllaCiIU+oN+LIrPX5FlwjUXWKPQjWc1LhrKNvDqyyCLEsLuXofHNZPaDPS9dP/fWhyxTSGs2rAH5i9PkgrmnVnmkvk3uXCh6T0LWL/aNQnE1yK8+fUhevcPDzrhmAdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
+  	$LINEDatas['token'] =' '; // Access Token ค่าที่เราสร้างขึ้น
 
 
   	$results = sentMessage($encodeJson,$LINEDatas);
